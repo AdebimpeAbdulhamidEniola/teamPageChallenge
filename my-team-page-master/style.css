@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+img {
+   width:238px;
+   height:347px;
+   display: block; 
+}
+
+
+.container {
+    margin: 3em auto;
+}
+body {
+    background: #FAFAFA;
+    padding-top: 6.88rem;
+    padding-left: 15.19rem; 
+} 
+
+h1 {
+color: #000;
+font-family: "PT Serif", serif;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.10125rem;
+}
+
+.question {
+color: #000;
+font-family: Poppins;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+.answer {
+    width: 27.4375rem;
+    height: 5.4375rem;
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 13.44rem;
+} 
+
+span {
+    float: right;
+    text-align: right;
+    writing-mode: vertical-lr;
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 267px);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:  "photo1 photo2 photo3"
+                          "photo4 photo5 photo6"; 
+    grid-column-gap: 3.55em;
+    grid-row-gap: 9.5em;
+
+    margin-top: 5em;
+}
+
+div.photo1 {
+    grid-area: photo1;
+}
+
+div.photo2 {
+    grid-area: photo2;
+}
+div.photo3 {
+    grid-area: photo3;
+}  
+div.phot4 {
+    grid-area: photo4;
+}
+div.photo5 {
+    grid-area: photo5;
+} 
+div.photo6 {
+    grid-area: photo6;
+}
+
+.padded {
+    margin-top: 5.75em;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ footer p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+@media(max-width: 955px) {
+    body {
+        padding-left: 2.35em;
+        padding-top: 4.4375em;
+    }
+    img {
+        display: block;
+        width: 149px;
+        height: 227px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 47.7px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em
+    }
+
+    .gridContainer {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 177px);
+        grid-template-rows: repeat(3, 288px);
+        grid-template-areas: "photo1 photo2"
+                             "photo3 photo4"
+                             "photo5 photo6";
+        grid-column-gap: 1.55em;
+        grid-row-gap: 1em;
+
+    }
+
+    div.photo1 {
+        grid-area: photo1;
+    }
+
+    div.photo2 {
+        grid-area: photo2;
+    }
+
+    div.photo3 {
+        grid-area: photo3;
+    }
+
+    div.photo4 {
+        grid-area: photo4;
+    }
+
+    div.photo5 {
+        grid-area: photo5;
+    }
+
+    div.photo6 {
+        grid-area: photo6;
+    }
+
+
+    .padded {
+        margin-top: 0em;
+    }
+     
+    .side2 {
+        margin-top: 3em;
+    }
+}
